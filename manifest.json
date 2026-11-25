@@ -1,0 +1,33 @@
+{
+  "display_information": {
+    "name": "Meu agente",
+    "description": "Escuta em tempo real as mensagens que chegam para mim (privado, grupo e menções)."
+  },
+  "oauth_config": {
+    "scopes": {
+      "user": [
+        "im:history",
+        "mpim:history",
+        "channels:history",
+        "groups:history",
+        "users:read"
+      ]
+    }
+  },
+  "settings": {
+    "event_subscriptions": {
+      "user_events": [
+        "message.im",
+        "message.mpim",
+        "message.channels",
+        "message.groups"
+      ]
+    },
+    "interactivity": {
+      "is_enabled": false
+    },
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": true,
+    "token_rotation_enabled": false
+  }
+}
